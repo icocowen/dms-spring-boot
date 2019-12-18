@@ -11,6 +11,7 @@ public class DormInfoMangementSystemApplicationTests {
 
     @Test
     public void contextLoads() {
+
     }
 
 }

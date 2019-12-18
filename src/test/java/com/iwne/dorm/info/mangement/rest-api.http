@@ -1,0 +1,30 @@
+GET http://localhost:8086/article/1231231
+Accept: */*
+Cache-Control: no-cache
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpd2VuIiwiZXhwIjoxNTc2NDg4MjA3LCJpYXQiOjE1NzY0ODQ2MDd9.AWJEIzZvKfe3OWYR4l4l8buwsnJr7sEhrAMSO1SInf8
+
+{password:'iwen',username:'5555'}
+
+###
+
+POST http://localhost:8086/login
+Accept: */*
+Cache-Control: no-cache
+
+{password:'123456',username:'123456',imageCode:'0897'}
+
+###
+
+GET http://localhost:8086/code/img
+Accept: */*
+Cache-Control: no-cache
+
+
+###eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJleHAiOjE1NzY2NzEwNDAsImlhdCI6MTU3NjY2MDI0MH0.DC71IUK1Mdi8ulaJarWQg6qOLRzDh7_yMwtQy3kmuOc
+
+GET http://localhost:8086/callboard
+Accept: */*
+Cache-Control: no-cache
+Authorization:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjM0NTYiLCJleHAiOjE1NzY2NzEwNDAsImlhdCI6MTU3NjY2MDI0MH0.DC71IUK1Mdi8ulaJarWQg6qOLRzDh7_yMwtQy3kmuOc
+
+###
