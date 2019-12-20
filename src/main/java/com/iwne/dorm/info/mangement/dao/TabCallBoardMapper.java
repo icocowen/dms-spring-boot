@@ -19,7 +19,7 @@ public interface TabCallBoardMapper {
             @Result(property = "showDate", column = "show_date"),
             @Result(property = "adminiId", column = "admini_id")
     })
-    public List<TabCallBoard> findByAdminId(@Param("admini_id") Integer adminId);
+    List<TabCallBoard> findByAdminId(@Param("admini_id") Integer adminId);
 
     @Insert("INSERT INTO tab_call_board(in_date,show_date,admini_id,content)" +
             " values(now(), #{date},#{admini_id}, #{content})")

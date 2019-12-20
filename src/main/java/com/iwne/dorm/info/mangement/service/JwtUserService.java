@@ -53,7 +53,7 @@ public class JwtUserService implements UserDetailsService{
 		adaministratorMapper.updateSalt(user.getUsername(), salt);
 
 		Algorithm algorithm = Algorithm.HMAC256(salt);
-		Date date = new Date(System.currentTimeMillis()+ 3*3600*1000);  //设置1小时后过期
+		Date date = new Date(System.currentTimeMillis()+ 3*3600*1000);  //设置3小时后过期
         return JWT.create()
         		.withSubject(user.getUsername())
                 .withExpiresAt(date)

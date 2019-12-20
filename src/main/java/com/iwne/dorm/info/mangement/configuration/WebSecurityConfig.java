@@ -41,11 +41,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception {
 		ValidateCodeFilter codeFilter = new ValidateCodeFilter();
 		codeFilter.setAuthenticationFailureHandler(new CodeAuthenctiationFailureHandler());
-
 		http.authorizeRequests()
 		        .antMatchers("/image/**","/code/img").permitAll()
-		        .antMatchers("/admin/**").hasAnyRole("ADMIN")
-		        .antMatchers("/article/**").hasRole("USER")
 		        .anyRequest().authenticated()
 		        .and()
 		    .csrf().disable()
